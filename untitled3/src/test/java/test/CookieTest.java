@@ -26,6 +26,7 @@ class CookieTest {
         List<String> cookie = responseHeader.get("Set-Cookie");
         requestHeader.add("Cookie", cookie.get(0));
         requestHeader.add("Cookie", cookie.get(1));
+        //		 headers.setContentType(MediaType.MULTIPART_FORM_DATA);<- 이걸로 교체하면 됨 !! (☜)
         // requestHeader.add(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
         // requestHeader.add(HttpHeaders.ACCEPT_CHARSET, StandardCharsets.UTF_8.name());
         // 2차 접속 uri 준비
